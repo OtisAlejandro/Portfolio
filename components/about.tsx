@@ -3,10 +3,14 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
+  const { ref } = useSectionInView("About");
+
   return (
     <motion.section
+      ref={ref}
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -29,8 +33,9 @@ export default function About() {
         I also do contract work for other Tech & AI-oriented companies. My core
         stack is{" "}
         <span className="font-medium">React, Next.js, Node.js, and Prisma</span>
-        . I am also familiar with MongoDB and most SQL libraries. Being very
-        driven and work-oriented, I always try to find a way to solve my
+        . I am also familiar with MongoDB and most SQL libraries, and also have
+        a few years of experience developing Discord bots as a service. Being
+        very driven and work-oriented, I always try to find a way to solve my
         problem, or use my resources to guide me. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
