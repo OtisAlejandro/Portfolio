@@ -1,10 +1,10 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import galatea from "@/public/galatea.png";
 import blogapp from "@/public/blogapp.png";
 import sushimeister from "@/public/sushimeister.png";
+import { BsDiscord } from "react-icons/bs";
 
 export const links = [
   {
@@ -74,4 +74,28 @@ export const skillsData = [
   "Python",
   "Django",
   "Framer Motion",
+] as const;
+
+export const experiencesData = [
+  {
+    title: "Discord Bot Developer",
+    location: "Remote",
+    description: "I developed and distributed advanced Discord bots for both clients and personal use, utilizing advanced API calls and MongoDB integration.",
+    icon: React.createElement(BsDiscord),
+    date: "2021-2022"
+  },
+  {
+    title: "Software Developer",
+    location: "Remote/Spring, TX",
+    description: "I am working part-time with PygmalionAI, helping to deliver a sleek, smooth, and advanced website for their users using React, Supabase, and Node.js.",
+    icon: React.createElement(CgWorkAlt),
+    date: "March 2023 - Present"
+  },
+  {
+    title: "Full-Stack Software & ML Engineer",
+    location: "Remote",
+    description: "I have supervised and assisted in the deployment of several of my own fullstack projects, as well as training Diffusion models and developing my own full-stack solutions for clients, as well as partaking in AI research groups and events.",
+    icon: React.createElement(FaReact),
+    date: "2023 - Present"
+  },
 ] as const;
