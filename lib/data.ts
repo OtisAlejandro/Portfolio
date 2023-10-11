@@ -86,7 +86,7 @@ export const experiencesData = [
   },
   {
     title: "Software Developer",
-    location: "Remote/Spring, TX",
+    location: "Spring, TX / Remote",
     description: "I am working part-time with PygmalionAI, helping to deliver a sleek, smooth, and advanced website for their users using React, Supabase, and Node.js.",
     icon: React.createElement(CgWorkAlt),
     date: "March 2023 - Present"
@@ -94,7 +94,7 @@ export const experiencesData = [
   {
     title: "Full-Stack Software & ML Engineer",
     location: "Remote",
-    description: "I have supervised and assisted in the deployment of several of my own fullstack projects, as well as training Diffusion models and developing my own full-stack solutions for clients, as well as partaking in AI research groups and events.",
+    description: "I have supervised and assisted in the deployment of several of my own fullstack projects, as well as training Diffusion models and developing my own full-stack solutions for clients, partaking in AI research groups and events along the way.",
     icon: React.createElement(FaReact),
     date: "2023 - Present"
   },

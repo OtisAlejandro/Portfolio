@@ -13,27 +13,34 @@ export default function Contact() {
 
   return (
     <motion.section
+      id="contact"
       ref={ref}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+      }}
       viewport={{
         once: true,
       }}
-      id="contact"
-      className="mb-20 sm:mb-28 w-[min(100, 38rem)] text-center"
     >
-      <SectionHeading>Contact Me</SectionHeading>
-      <p className="text-gray-700 -mt-6">
+      <SectionHeading>Contact me</SectionHeading>
+
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a href="mailto:otis@otisai.dev" className="underline">
+        <a className="underline" href="mailto:otis@otisai.dev">
           otis@otisai.dev
         </a>{" "}
         or through this form.
       </p>
 
       <form
-        className="mt-10 flex flex-col"
+        className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -42,23 +49,23 @@ export default function Contact() {
             return;
           }
 
-          toast.success('Email sent successfully!');
-        }}   
+          toast.success("Email sent successfully!");
+        }}
       >
         <input
-          type="email"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none focus:outline=[1px] focus:outline-black"
           name="senderEmail"
+          type="email"
           required
           maxLength={500}
           placeholder="Your email"
-          className="px-4 h-14 rounded-lg borderBlack focus:outline-[1px] focus:outline-black"
         />
         <textarea
-          placeholder="Your message"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none focus:outline=[1px] focus:outline-black"
           name="message"
+          placeholder="Your message"
           required
           maxLength={5000}
-          className="h-52 my-3 rounded-lg borderBlack p-4 focus:outline-[1px] focus:outline-black"
         />
         <SubmitBtn />
       </form>

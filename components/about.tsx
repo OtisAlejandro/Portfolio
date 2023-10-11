@@ -22,21 +22,20 @@ export default function About() {
         During the lockdown of <span className="font-medium">2020</span>, my
         passion for programming really took off. I had years of prior experience
         programming, but something felt different... this time, I wanted to make
-        a career out of it. Pulling up YouTube and Amazon, I ordered textbooks
+        a career out of it. Going to YouTube and Amazon, I ordered textbooks
         and watched videos, slowly teaching myself{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">Eventually</span>, after making several
         projects of my own, I started doing freelance contract work, where I
         found a position at <span className="underline">PygmalionAI</span>,
         helping develop their website and platform. Since then, I've also had
-        many more opportunities and am currently a member of Nous Research, and
-        I also do contract work for other Tech & AI-oriented companies. My core
+        many more opportunities and am currently a member of Nous Research, also doing contract work for other Tech & AI-oriented companies in the meantime. My core
         stack is{" "}
         <span className="font-medium">React, Next.js, Node.js, and Prisma</span>
         . I am also familiar with MongoDB and most SQL libraries, and also have
         a few years of experience developing Discord bots as a service. Being
         very driven and work-oriented, I always try to find a way to solve my
-        problem, or use my resources to guide me. I am currently looking for a{" "}
+        problems, or use my resources to guide me. I am currently looking for a{" "}
         <span className="font-medium">full-time position</span> as a software
         developer.
       </p>
