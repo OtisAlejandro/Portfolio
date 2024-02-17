@@ -32,7 +32,7 @@ export const links = [
 export const projectsData = [
   {
     title: "Galatea",
-    description: "I have worked as a website developer with PygmalionAI for 6 months, helping develop their chat platform.",
+    description: "I worked as a website developer with PygmalionAI for 6 months, helping develop their chat platform.",
     tags: ["React", "Vite", "TailwindCSS", "Node.js", "Docker"],
     imageUrl: galatea,
   },
@@ -64,11 +64,9 @@ export const skillsData = [
   "MongoDB",
   "Redux",
   "GraphQL",
-  "Apollo",
   "Express",
   "PostgreSQL",
   "Python",
-  "Django",
   "Framer Motion",
 ] as const;
 
@@ -86,6 +84,13 @@ export const experiencesData = [
     description: "I am working part-time with PygmalionAI, helping to deliver a sleek, smooth, and advanced website for their users using React, Supabase, and Node.js.",
     icon: React.createElement(CgWorkAlt),
     date: "March 2023 - Present"
+  },
+  {
+    title: "Frontend Developer",
+    location: "Remote",
+    description: "In October of 2023, Chai contracted me for one week where I assisted in the development of new portions of their website. I communicated with their UI/UX design teams and flawlessly translated Figma into code, delivering a sleek and dynamic experience for users.",
+    icon: React.createElement(CgWorkAlt),
+    date: "October 2023"
   },
   {
     title: "Full-Stack Software & ML Engineer",
